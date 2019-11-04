@@ -1,0 +1,29 @@
+syntax = "proto3";
+package v1;
+
+import "google/protobuf/timestamp.proto";
+
+// define type
+message ToDo {
+  int64 id = 1;
+  string title = 2;
+  string descripton = 3;
+  google.protobuf.Timestamp reminder = 4;
+}
+
+// define request
+message CreateRequest {
+  string api = 1;
+  ToDo todo = 2;
+}
+
+// define response
+message CreateResponse {
+  string api = 1;
+  ToDo todo = 2;
+}
+
+// define service
+service TodoService {
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+}
