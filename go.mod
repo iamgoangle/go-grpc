@@ -1,4 +1,4 @@
-module git.linecorp.com/LINE-Thailand/go-grpc
+module github.com/iamgoangle/go-grpc
 
 go 1.13
 
