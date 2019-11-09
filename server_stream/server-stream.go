@@ -8,7 +8,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "github.com/iamgoangle/go-grpc/02_server_stream/proto"
+	pb "github.com/iamgoangle/go-grpc/server_stream/proto"
 )
 
 const (

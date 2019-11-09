@@ -8,7 +8,7 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"google.golang.org/grpc"
 
-	pb "github.com/iamgoangle/go-grpc/01_unary/proto"
+	pb "github.com/iamgoangle/go-grpc/unary/proto"
 )
 
 const (

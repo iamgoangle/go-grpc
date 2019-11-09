@@ -7,7 +7,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "github.com/iamgoangle/go-grpc/02_server_stream/proto"
+	pb "github.com/iamgoangle/go-grpc/server_stream/proto"
 )
 
 const (
@@ -41,6 +41,7 @@ func doStreamServer(c pb.GreetServiceClient) {
 	if err != nil {
 		log.Fatalf("error while calling stream RPC: %v", err)
 	}
+
 	for {
 		msg, err := resStream.Recv()
 		if err == io.EOF {
